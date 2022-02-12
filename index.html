@@ -10,9 +10,68 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+    <style type="text/css">
+		
+		body {
+			margin: 0;
+		}
 
-    <p> Lets Build a Wonderful Site! </p>
+		/* NAV BAR */
 
+		.nav-bar {
+			width: 50%;
+			height: 100%;
+			margin: 0;
+            padding: 100px;
+			background: black;
+
+			/* Toggle between static and sticky */
+
+			/*position: sticky;
+			top: 0; */
+		}
+
+		.nav-bar > .element {
+			width: 100%;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+			display: inline-block;
+			margin: 0;
+			font-family: Arial;
+			text-decoration: none;
+            transition : transform 0.2s linear;
+		}
+
+		.nav-bar > .element:hover {
+			color: white; 
+  			text-decoration: underline;
+            transform : translateX( 15px );
+			/*background-color: white;*/
+		}	
+
+
+		/* BODY */
+
+		.content {
+			width: 80%;
+			margin-left: 10%;
+		}
+
+	</style>
+
+    <div class=nav-bar>
+    	<a href='nav_bar.html' class=element> Home </a>
+    	<a href='nav_bar.html' class=element> Experience </a>
+    	<a href='nav_bar.html' class=element> Projects </a>
+    	<a href='nav_bar.html' class=element> Travel </a>
+    	<a href='nav_bar.html' class=element> Contact </a>
+    </div>
+
+    <div class=content>
+    	
+		<p>Phasellus pellentesque, ex ut iaculis tristique, quam elit commodo metus, in efficitur sapien erat ac dui. Curabitur malesuada, nunc et molestie ultricies, lorem lacus tempor odio, sit amet porta elit turpis vel libero. Maecenas sit amet faucibus lectus. Nam a massa in ante aliquam luctus et et augue. Morbi ullamcorper, sapien non consectetur mollis, turpis sem varius justo, sed iaculis mi quam a purus. Aenean in justo sit amet nibh sagittis semper. Praesent blandit tincidunt dui eget suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus eleifend mollis purus ac finibus. Nullam imperdiet finibus elit, at gravida arcu rutrum a. Nunc quis iaculis est, ac interdum nibh. In hac habitasse platea dictumst.</p>
+    </div>
     <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
 
 </body>
