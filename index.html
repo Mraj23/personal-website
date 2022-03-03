@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">  <!-- Insert StyleSheet -->
     <link rel="icon" href="cool-icon.png">                    <!-- Insert Icon -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <style type="text/css">
+
+		:root {
+			--main_colour: rgb(5, 5, 66);
+		}
 		
 		body {
 			margin: 0;
@@ -23,8 +30,9 @@
 			height: 100%;
 			margin: 0;
             padding: 100px;
-			background: black;
-
+			background: var(--main_colour);
+			font-size : 60px;
+			font-family: 'Roboto', sans-serif;
 			/* Toggle between static and sticky */
 
 			/*position: sticky;
@@ -33,7 +41,7 @@
 
 		.nav-bar > .element {
 			width: 100%;
-			line-height: 50px;
+			line-height: 110px;
 			text-align: center;
 			color: white;
 			display: inline-block;
@@ -41,12 +49,14 @@
 			font-family: Arial;
 			text-decoration: none;
             transition : transform 0.2s linear;
+			
 		}
 
 		.nav-bar > .element:hover {
 			color: white; 
   			text-decoration: underline;
             transform : translateX( 15px );
+			font-weight: Bold;
 			/*background-color: white;*/
 		}	
 
@@ -58,20 +68,27 @@
 			margin-left: 10%;
 		}
 
+		.title {
+			width: 50%;
+			height: 100%;
+			margin: 0;
+            padding: 100px;
+			background: var(--main_colour);
+			font-size : 60px;
+			font-family: 'Bungee Shade',	
+		}
+
 	</style>
 
     <div class=nav-bar>
     	<a href='nav_bar.html' class=element> Home </a>
     	<a href='nav_bar.html' class=element> Experience </a>
-    	<a href='nav_bar.html' class=element> Projects </a>
+    	<a href='projects_page.html' class=element> Projects </a>
     	<a href='nav_bar.html' class=element> Travel </a>
     	<a href='nav_bar.html' class=element> Contact </a>
     </div>
 
-    <div class=content>
-    	
-		<p>Phasellus pellentesque, ex ut iaculis tristique, quam elit commodo metus, in efficitur sapien erat ac dui. Curabitur malesuada, nunc et molestie ultricies, lorem lacus tempor odio, sit amet porta elit turpis vel libero. Maecenas sit amet faucibus lectus. Nam a massa in ante aliquam luctus et et augue. Morbi ullamcorper, sapien non consectetur mollis, turpis sem varius justo, sed iaculis mi quam a purus. Aenean in justo sit amet nibh sagittis semper. Praesent blandit tincidunt dui eget suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus eleifend mollis purus ac finibus. Nullam imperdiet finibus elit, at gravida arcu rutrum a. Nunc quis iaculis est, ac interdum nibh. In hac habitasse platea dictumst.</p>
-    </div>
+	<div class = title> Raj Mehta </div>
     <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
 
 </body>
